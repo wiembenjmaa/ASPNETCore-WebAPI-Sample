@@ -16,6 +16,7 @@ steps:
 - task: NuGetToolInstaller@1
 - script: echo Hello, $(buildPlatform)!
 - script: echo Hello, $(BuildConfiguration)!
+- script: echo Hello, $(test)!
 
 - task: NuGetCommand@2
   inputs:
